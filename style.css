@@ -4,8 +4,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: black;
+    /* background-color: black; */
     font-family: 'Open Sans', sans-serif;
+    background-image: url("./Assets/cristofer-maximilian-uQDRDqpYJHI-unsplash.jpg");
+    background-color: #cccccc;
+    background-image: center;
+    background-size: cover;
    
 }
 
@@ -36,6 +40,5 @@ body {
     width: 100%;
     max-width: 420px;
     margin: 1rem;
-    background-color: rgb(182, 207, 253);
-
+    background-color: rgba(249, 251, 255, 0.644);
 }
