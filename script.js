@@ -22,7 +22,8 @@ let weather = {
             var sunriseTime = moment.unix(sunrise).format("hh:mm a");
             var sunsetTime = moment.unix(sunset).format("hh:mm a");
             var currentTime = moment.unix(sunrise).format("MM/DD/YYYY");
-        console.log(name, icon, description, temp, humidity, speed, deg, all, sunrise, sunset, sunriseTime, sunsetTime, currentTime);
+       
+        // console.log(name, icon, description, temp, humidity, speed, deg, all, sunrise, sunset, sunriseTime, sunsetTime, currentTime);
 
         // Display our weather information on the page using querySelector and setting the innerText to equal our new variables.
         //Name
@@ -55,6 +56,9 @@ let weather = {
                  //High Tide
                     //Low Tide
                         //UV Index
+        
+        // Hide/Show Page
+        document.querySelector(".weather").classList.remove("loading");
         
     },
 
