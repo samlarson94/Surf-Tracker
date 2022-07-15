@@ -54,11 +54,14 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 2rem, .8rem;
+    margin: 2rem, 1rem;
     align-content: center;
     text-align: center;
     gap: 5px;
-    
+}
+
+.weather {
+    margin-top: 1rem;
 }
 
 .card {
