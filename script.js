@@ -19,7 +19,10 @@ let weather = {
         const { all } = data.clouds;
         const {speed, deg, gust } = data.wind;
         const { sunrise, sunset } = data.sys;
-        console.log(name, icon, description, temp, humidity, speed, deg, all, sunrise, sunset);
+            var sunriseTime = moment.unix(sunrise).format("hh:mm a");
+            var sunsetTime = moment.unix(sunset).format("hh:mm a");
+            var currentTime = moment.unix(sunrise).format("MM/DD/YYYY");
+        console.log(name, icon, description, temp, humidity, speed, deg, all, sunrise, sunset, sunriseTime, sunsetTime, currentTime);
 
         // Display our weather information on the page using querySelector and setting the innerText to equal our new variables.
         //Name
@@ -41,9 +44,11 @@ let weather = {
         //Wind Gust
         document.querySelector(".wind-gust").innerText = "Gust: " + gust + " mph";
         //Sunrise
-        document.querySelector(".sunrise").innerText = "Sunrise: " + sunrise;
+        document.querySelector(".sunrise").innerText = "Sunrise: " + sunriseTime;
         //Sunset 
-        document.querySelector(".sunset").innerText = "Sunrise: " + sunset;
+        document.querySelector(".sunset").innerText = "Sunset: " + sunsetTime;
+        //Current Time
+        document.querySelector(".time").innerText = currentTime;
 
             // Need to Find with a more beach-specific API:
                  //High Tide
