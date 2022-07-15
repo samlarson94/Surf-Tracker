@@ -56,8 +56,20 @@ let weather = {
                     //Low Tide
                         //UV Index
         
+    },
+
+    //2) Add Search Function linked to API
+    search: function () {
+        // get content from search bar and send to fetchWeather
+        this.fetchWeather(document.querySelector(".search-bar").value);
     }
-}
+};
+
+//1) Add Event listener
+document.querySelector(".search-btn").addEventListener("click", function () {
+    //3) Call Search Function off of Button Event Listner
+weather.search();
+})
 
 // Convert City to Lat/Long via Direct GeoCode = https://openweathermap.org/api/geocoding-api
 // One Call = https://openweathermap.org/api/one-call-3
