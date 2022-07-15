@@ -31,10 +31,11 @@ let weather = {
         document.querySelector(".temp").innerText = temp + "°F";
         //Icon - control size of icon by adding '@2x.png' in very last string position - currently ".png"
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+         //Description
+        document.querySelector(".description").innerText = description;
         //Cloudiness
         document.querySelector(".cloud-coverage").innerText = "Cloud Coverage: " + all + "%";
-        //Description
-        document.querySelector(".description").innerText = description;
+       
         //Humidity
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         //Wind Speed
@@ -52,8 +53,8 @@ let weather = {
 
             // Need to Find with a more beach-specific API:
                  //High Tide
-                     //Low Tide
-                           //UV Index
+                    //Low Tide
+                        //UV Index
         
     }
 }
