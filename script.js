@@ -68,8 +68,15 @@ let weather = {
 //1) Add Event listener
 document.querySelector(".search-btn").addEventListener("click", function () {
     //3) Call Search Function off of Button Event Listner
-weather.search();
-})
+    weather.search();
+});
+
+document.querySelector(".search-bar").addEventListener("keyup", function (event) {
+
+    if (event.key == "Enter") {
+        weather.search();
+    }
+});
 
 // Convert City to Lat/Long via Direct GeoCode = https://openweathermap.org/api/geocoding-api
 // One Call = https://openweathermap.org/api/one-call-3
