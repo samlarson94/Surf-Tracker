@@ -60,6 +60,9 @@ let weather = {
         // Hide/Show Page
         document.querySelector(".weather").classList.remove("loading");
         
+        //Dynamic Background Images
+        // document.body.style.backgroundImage = url("https://source.unsplash.com/1600x900/?" + name + "")
+        
     },
 
     //2) Add Search Function linked to API

@@ -69,8 +69,8 @@ button:hover {
     padding: 2rem;
     border-radius: 30px;
     width: 60%;
-    max-width: 400px;
-    margin: 1rem;
+    max-width: 1000px;
+    margin: .5rem;
     background-color: rgba(13, 13, 13, 0.651);
     color: white;
 }
@@ -96,6 +96,7 @@ h1.temp {
 .weather.loading {
     display: none;
 }
+
 
 
 /* .main-logo {
