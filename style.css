@@ -68,9 +68,9 @@ button:hover {
     background-color: white;
     padding: 2rem;
     border-radius: 30px;
-    width: 60%;
+    width: 75%;
     max-width: 600px;
-    margin: .5rem;
+    margin: 1rem;
     background-color: rgba(13, 13, 13, 0.651);
     color: white;
 }
@@ -88,13 +88,22 @@ h1.temp {
     height: auto;
 }
 
-.flexbox {
+/* .flexbox {
     display: flex;
     align-items: center;
-}
+    text-align: center;
+} */
 
 .weather.loading {
     display: none;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .table {
@@ -102,6 +111,8 @@ h1.temp {
     color: white;
     border: 1px rgb(222, 220, 220) solid;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -111,3 +122,13 @@ h1.temp {
     max-width: 300px;
     height: auto;
 } */
+
+@media screen and (max-width: 450px ) {
+    .search-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    };
+}
