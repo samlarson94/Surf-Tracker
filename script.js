@@ -88,3 +88,6 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
 
 // Convert City to Lat/Long via Direct GeoCode = https://openweathermap.org/api/geocoding-api
 // One Call = https://openweathermap.org/api/one-call-3
+
+// Add Tide and Weather Information via Stormglass API
+
